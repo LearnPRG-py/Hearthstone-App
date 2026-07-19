@@ -10,7 +10,7 @@ import {
 import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 
-const ASL_COURSE_URL = "https://your-project-hearthstone-site.com"; // swap in real link
+const kAslCourseURL = "https://soft-babka-dec3e0.netlify.app/courses/";
 
 type ButtonDef = {
   label: string;
@@ -23,7 +23,7 @@ export default function Home() {
 
   const buttons: ButtonDef[] = [
     { label: "AI Model", action: () => router.push("/camera") },
-    { label: "ASL Course", action: () => Linking.openURL(ASL_COURSE_URL) },
+    { label: "ASL Course", action: () => Linking.openURL(kAslCourseURL) },
     {
       label: "Indian Sign Language",
       action: () => router.push("/coming-soon/isl"),
