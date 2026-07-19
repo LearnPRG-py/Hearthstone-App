@@ -61,7 +61,7 @@ export default function Home() {
       <ScrollView contentContainerStyle={{ paddingBottom: 40 }}>
         <View style={styles.header}>
           <ImageBackground
-            source={require("../../assets/images/hearthstone-header.png")}
+            source={require("../../../assets/images/hearthstone-header.png")}
             style={styles.headerImage}
             resizeMode="cover"
           >
