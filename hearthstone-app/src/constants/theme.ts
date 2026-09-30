@@ -24,6 +24,18 @@ export const Colors = {
   },
 } as const;
 
+export const COLORS = {
+  bg: "#0A2A6B", // solid blue, used by every screen
+  surface: "rgba(255,255,255,0.07)",
+  surfaceStrong: "rgba(255,255,255,0.11)",
+  border: "rgba(255,255,255,0.16)",
+  primary: "#3B82F6",
+  accent: "#7CC4FF",
+  text: "#FFFFFF",
+  muted: "#A9BDE6",
+  danger: "#FF9A9A",
+};
+
 export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
 
 export const Fonts = Platform.select({
